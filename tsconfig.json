@@ -3,9 +3,12 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
+    "baseUrl": "src",
     "lib": [
       "dom",
-      "es2017"
+      "es2017",
+      "dom.iterable",
+      "esnext"
     ],
     "module": "esnext",
     "moduleResolution": "node",
@@ -29,6 +32,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src"
   ]
 }
