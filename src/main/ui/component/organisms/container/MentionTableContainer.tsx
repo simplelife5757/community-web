@@ -1,3 +1,4 @@
+import * as mentionAPI from 'main/api/mentions';
 import * as React from 'react';
 import IMentionResponse from 'main/api/mentions/dto/IMentionResponse';
 import MentionTable from 'main/ui/component/organisms/MentionTable';
@@ -42,3 +43,5 @@ class MentionTableContainer extends React.Component<{}, IState> {
     this.setState({ pending: false, rejected: true })
   }
 }
+
+export default MentionTableContainer
