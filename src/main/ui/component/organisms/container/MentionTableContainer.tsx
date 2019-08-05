@@ -11,14 +11,14 @@ export interface IState {
 
 class MentionTableContainer extends React.Component<{}, IState> {
   public state = {
-    mentions: [{
-      id: -1,
-      name: "John Doe",
-      content: "Lorem Ipsum",
-      createdAt: (new Date()).toDateString()
-    }] as IMentionResponse[],
-    pending: false,
-    rejected: false
+      mentions: [{
+        id: -1,
+        name: "John Doe",
+        content: "Lorem Ipsum",
+        createdAt: (new Date()).toDateString()
+      }] as IMentionResponse[],
+      pending: false,
+      rejected: false
     }
   
   public async componentDidMount() {
